@@ -4,9 +4,9 @@
   "description": "Blog & Podcast by Lola Odelola",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "yarn run clean && gatsby develop",
+    "build": "yarn run clean && gatsby build",
+    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
     "clean": "rimraf .cache public",
     "flow": "flow",
     "flow-typed": "flow-typed install",
