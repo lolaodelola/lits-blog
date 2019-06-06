@@ -22,9 +22,9 @@ const PostTemplate = ({ author, data }: Props) => {
         <Link to="/">
           <img
             src={withPrefix(`${siteAuthor.photo}`)}
-            className={authorStyles['author__photo']}
-            width="75"
-            height="75"
+            className={authorStyles['author__photo-menu']}
+            width="100"
+            height="100"
             alt={`${siteAuthor.photo}`}
           />
         </Link>
