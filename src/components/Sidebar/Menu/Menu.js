@@ -28,17 +28,20 @@ const Menu = ({ menu }: Props) => (
         <a
           href="https://lolaodelola.dev"
           className={styles['menu__list-item-link']}
-          activeClassName={styles['menu__list-item-link--active']}
         >
           Jobs
         </a>
       </li>
-      <li className={styles['menu__list-item']}><a href="#" className={styles['menu__list-item']}>
-        Book Office Hours
-      </a></li>
-      <li className={styles['mainMenu__list-item']}><a href="#" className={styles['menu__list-link']}>
-        Podcast
-      </a></li>
+      <li className={styles['menu__list-item']}>
+        <a href="#" className={styles['menu__list-item-link']}>
+          Book Office Hours
+        </a>
+      </li>
+      <li className={styles['menu__list-item']}>
+        <a href="#" className={styles['menu__list-item-link']}>
+          Podcast
+        </a>
+      </li>
       <li className={styles['menu__list-item']}>
         <a
           href="https://lolaodelola.dev"
@@ -48,7 +51,6 @@ const Menu = ({ menu }: Props) => (
           About Me
         </a>
       </li>
-
     </ul>
   </nav>
 );
