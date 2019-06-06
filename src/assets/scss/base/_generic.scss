@@ -17,6 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: .5px;
+  font-weight: 400;
 }
 
 h1,
@@ -27,7 +28,7 @@ h5,
 h6 {
   font-family: $typographic-heading-font-family;
   font-weight: 700;
-  letter-spacing: 0.9px;
+  letter-spacing: .1rem;
 }
 
 h1 {
