@@ -26,19 +26,19 @@ const Menu = ({ menu }: Props) => (
       ))}
       <li className={styles['menu__list-item']}>
         <a
-          href="https://lolaodelola.dev"
+          href="https://lostinthesource.seeker.company/"
           className={styles['menu__list-item-link']}
         >
           Jobs
         </a>
       </li>
       <li className={styles['menu__list-item']}>
-        <a href="#" className={styles['menu__list-item-link']}>
+        <a href="https://calendly.com/lolaodelola/office-hours" className={styles['menu__list-item-link']}>
           Book Office Hours
         </a>
       </li>
       <li className={styles['menu__list-item']}>
-        <a href="#" className={styles['menu__list-item-link']}>
+        <a href="https://soundcloud.com/lostinthesource" className={styles['menu__list-item-link']}>
           Podcast
         </a>
       </li>
