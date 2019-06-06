@@ -29,10 +29,10 @@ const PostTemplate = ({ author, data }: Props) => {
           />
         </Link>
         <ul className={menuStyles['mainMenu__list']}>
-          <li className={menuStyles['mainMenu__list-item']}><a href="#" className={menuStyles['mainMenu__list-link']}>
+          <li className={menuStyles['mainMenu__list-item']}><a href="https://calendly.com/lolaodelola/office-hours" className={menuStyles['mainMenu__list-link']}>
             Book Office Hours
           </a></li>
-          <li className={menuStyles['mainMenu__list-item']}><a href="#" className={menuStyles['mainMenu__list-link']}>
+          <li className={menuStyles['mainMenu__list-item']}><a href="https://soundcloud.com/lostinthesource" className={menuStyles['mainMenu__list-link']}>
             Podcast
           </a></li>
         </ul>
