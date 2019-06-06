@@ -13,25 +13,6 @@ type Props = {
 const Menu = ({ menu }: Props) => (
   <nav className={styles['menu']}>
     <ul className={styles['menu__list']}>
-      <li className={styles['menu__list-item']}>
-        <a
-          href="https://lolaodelola.dev"
-          className={styles['menu__list-item-link']}
-          activeClassName={styles['menu__list-item-link--active']}
-        >
-          About Me
-        </a>
-      </li>
-      <li className={styles['menu__list-item']}>
-        <a
-          href="https://lolaodelola.dev"
-          className={styles['menu__list-item-link']}
-          activeClassName={styles['menu__list-item-link--active']}
-        >
-          Jobs
-        </a>
-      </li>
-
       {menu.map((item) => (
         <li className={styles['menu__list-item']} key={item.path}>
           <Link
@@ -43,6 +24,31 @@ const Menu = ({ menu }: Props) => (
           </Link>
         </li>
       ))}
+      <li className={styles['menu__list-item']}>
+        <a
+          href="https://lolaodelola.dev"
+          className={styles['menu__list-item-link']}
+          activeClassName={styles['menu__list-item-link--active']}
+        >
+          Jobs
+        </a>
+      </li>
+      <li className={styles['menu__list-item']}><a href="#" className={styles['menu__list-item']}>
+        Book Office Hours
+      </a></li>
+      <li className={styles['mainMenu__list-item']}><a href="#" className={styles['menu__list-link']}>
+        Podcast
+      </a></li>
+      <li className={styles['menu__list-item']}>
+        <a
+          href="https://lolaodelola.dev"
+          className={styles['menu__list-item-link']}
+          activeClassName={styles['menu__list-item-link--active']}
+        >
+          About Me
+        </a>
+      </li>
+
     </ul>
   </nav>
 );
