@@ -1,6 +1,41 @@
 @import '../../../assets/scss/variables';
 @import '../../../assets/scss/mixins';
 
+.mainMenu {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+
+    &-item {
+      padding: 1rem;
+      margin: 10px 0;
+      float: right;
+
+      &-link {
+        font-size: $typographic-base-font-size;
+        color: $typographic-base-font-color;
+        font-weight: normal;
+        border: 0;
+
+        &:hover,
+        &:focus {
+          color: $color-primary;
+          border-bottom: 1px solid $color-primary;
+        }
+
+        &--active {
+          color: $color-base;
+          border-bottom: 1px solid $color-base;
+        }
+
+      }
+
+    }
+
+  }
+}
 .menu {
   @include margin-bottom(1);
 
