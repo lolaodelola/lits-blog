@@ -8,10 +8,7 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-  }
-
-  &__all-articles {
-    padding: 1rem;
+    margin-top: 2rem;
   }
 
   &__list {
@@ -23,7 +20,12 @@
     &-item {
       padding: 1rem;
       margin: 10px 0;
-      float: right;
+      &__right{
+        float: right;
+      }
+      &__left{
+        float: left;
+      }
 
       &-link {
         font-size: $typographic-base-font-size;
