@@ -20,7 +20,7 @@ I thought I knew but, friends, I had no idea.
 
 It started because I noticed that the Java notation for instantiating an array isn't as simple as it is in Ruby. As shown in the image, when instantiating an Array in Java, I have to pass also include a number. Naturally, my question was, what's does the number mean?
 
-![array definitions in ruby and java](/media/array_ex_ruby_java.png "array definitions in ruby and java")
+![array definitions in ruby and java](/media/carbon-1-.png "array definitions in ruby and java")
 
 I've always said Rubyists don't need to worry too much about memory allocation (once again, lol) because Ruby is [garbage collected](https://medium.com/r/?url=https%3A%2F%2Fruby-hacking-guide.github.io%2Fgc.html) (though memory leaks **do** happen). Apart from that though, Ruby abstracts a lot of the stuff to do with memory that other languages don't. **When an object is created, in any language, it takes up a bit of memory, in the case of newly initialised arrays, adjoining blocks of memory are reserved for the array**. So, back to this number. In Java, you have to specify a max amount of objects you want you array to hold, so that the memory can be allocated when it's time. `anArray = new int[500];` says instantiate an array that has a default size of 500, basically, the array can't grow past 500 items.
 
@@ -48,10 +48,10 @@ Java does something similar in its `grow` function on `ArrayList`.
 
 It makes sure the `newCapacity` is a positive number and the right size (lines 5–8), then it copies the data of the array to a new array with the new capacity (line 10).
 
-***
+- - -
 
 So what was the point? Now you know that arrays in Ruby **are** `Array`s that behave like `ArrayList`s, what now? Do you need to know this for your everyday work, probably not if you're programming with Ruby and you probably already know it if you're programming with Java. However, peeling the layer back on Ruby gives more understanding to the magic of the language. Just as statically typed languages [force you to think about the objects you return](https://lostinthesource.com/lets-get-lost-in-types), they also force you to think about the kinds of data structures you need and when. Ruby arrays can also act similarly to `Stack`s and `Queue`s due to the different methods defined on the class, so an array kind of becomes this multi-purpose object that can store anything and can behave like many things, and that's useful sometimes.
 
-***
+- - -
 
 _Thanks to [Marko Lindqvist](https://twitter.com/cazfi74) for helping me understand some of the tricky C code._
