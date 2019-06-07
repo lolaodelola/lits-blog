@@ -1,7 +1,7 @@
 ---
 template: post
 title: Let’s Get Lost in Types
-slug: types
+slug: lets-get-lost-in-types
 draft: false
 date: 2019-03-07T00:00:14.969Z
 description: Ruby’s dynamically typed fluidity vs Java’s statically typed rigidity.
