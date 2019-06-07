@@ -46,9 +46,9 @@ So how do I solve my original problem? Java is strict but it’s not unreasonabl
 
 ![The correct Java implementation of Search method](/media/types_right_java.png "The correct Java implementation of search")
 
-This method either returns a \`Contact\` or it returns \`null\` , that’s it. It will never return anything else and only does that one thing, it doesn’t care about communicating back to the user, and maybe it shouldn’t. Maybe somewhere else I can have an \`if null\` conditional that returns a message to the user. Where in Ruby I can make my method return different types and my variables are allowed to store different types, Java forces me to ask “why?”. Why do I want to make a method return more than one type, and is it appropriate?
+This method either returns a `Contact` or it returns `null` , that’s it. It will never return anything else and only does that one thing, it doesn’t care about communicating back to the user, and maybe it shouldn’t. Maybe somewhere else I can have an `if null` conditional that returns a message to the user. Where in Ruby I can make my method return different types and my variables are allowed to store different types, Java forces me to ask “why?”. Why do I want to make a method return more than one type, and is it appropriate?
 
-Another way I could have solved this to return either a \`Contact\` or a \`String\` would have been to make the method return an \`Object\`. Just like Ruby, everything in Java inherits from the class \`Object\` and so everything is of type \`Object\`. Or instead of returning a \`String\`, in the else statement I could have printed out the message I wanted to be read by the user: \`System.out.println("This contact does not exist")\`.
+Another way I could have solved this to return either a `Contact` or a `String` would have been to make the method return an `Object`. Just like Ruby, everything in Java inherits from the class `Object` and so everything is of type `Object`. Or instead of returning a `String`, in the else statement I could have printed out the message I wanted to be read by the user: `System.out.println("This contact does not exist")`.
 
 - - -
 
