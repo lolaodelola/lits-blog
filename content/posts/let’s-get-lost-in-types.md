@@ -8,6 +8,7 @@ description: Ruby’s dynamically typed fluidity vs Java’s statically typed ri
 category: Programming
 tags:
   - Ruby
+  - Java
 ---
 I’m a Ruby coder, it’s the first language I fell in love with (although not the first language I learnt) and part of the reason I fell in love with Ruby is because I found it accessible. It reads really well and I found it super easy to understand. That’s great stuff for a beginner, but since then, I’ve come to love something else: Ruby is a dynamically typed language. Honestly, for a long time I didn’t even know what that meant, I just knew it to be true. Programming languages tend to fall into two camps, **statically typed** and **dynamically typed**.
 
@@ -49,9 +50,10 @@ This method either returns a \`Contact\` or it returns \`null\` , that’s it. I
 
 Another way I could have solved this to return either a \`Contact\` or a \`String\` would have been to make the method return an \`Object\`. Just like Ruby, everything in Java inherits from the class \`Object\` and so everything is of type \`Object\`. Or instead of returning a \`String\`, in the else statement I could have printed out the message I wanted to be read by the user: \`System.out.println("This contact does not exist")\`.
 
-***
-*Thanks to [TJ](https://medium.com/@Tunji_D) for proofreading this post, if you want to know about cool Android development things, definitely check out his profile.
+- - -
 
-Also thanks to Ashwin Maroli for correcting my typo in the ruby example.
+_Thanks to_ [_TJ_](https://medium.com/@Tunji_D) _for proofreading this post, if you want to know about cool Android development things, definitely check out his profile._
 
-This post first appeared on Medium.*
+_Also thanks to Ashwin Maroli for correcting my typo in the ruby example._
+
+_This post first appeared on Medium._
