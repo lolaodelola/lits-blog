@@ -17,6 +17,8 @@ const PostTemplate = ({ author, data }: Props) => {
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
 
   return (
+    <div className={menuStyles['mainMenu__banner']}>
+    </div>
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
       <div>
         <Link to="/">

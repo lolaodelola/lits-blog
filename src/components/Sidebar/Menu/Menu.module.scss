@@ -2,6 +2,13 @@
 @import '../../../assets/scss/mixins';
 
 .mainMenu {
+  &__banner {
+    min-height: 50vh;
+    background-image: image-url('../../../../static/banner.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
   &__list {
     list-style: none;
     padding: 0;
