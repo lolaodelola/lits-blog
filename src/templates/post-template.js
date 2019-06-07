@@ -20,17 +20,17 @@ const PostTemplate = ({ author, data }: Props) => {
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
       <div>
         <ul className={menuStyles['mainMenu__list']}>
-          <li className={menuStyles['mainMenu__list-item__right']}>
-            <Link to="/">
-              All articles
-            </Link>
-          </li>
           <li className={menuStyles['mainMenu__list-item__right']}><a href="https://calendly.com/lolaodelola/office-hours" className={menuStyles['mainMenu__list-link']}>
             Book Office Hours
           </a></li>
           <li className={menuStyles['mainMenu__list-item__right']}><a href="https://soundcloud.com/lostinthesource" className={menuStyles['mainMenu__list-link']}>
             Podcast
           </a></li>
+          <li className={menuStyles['mainMenu__list-item__right']}>
+            <Link to="/">
+              All articles
+            </Link>
+          </li>
         </ul>
       </div>
       <div className={menuStyles['mainMenu__banner']}>
