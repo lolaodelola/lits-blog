@@ -15,7 +15,7 @@ module.exports = {
   ],
   author: {
     name: 'Lola Odelola',
-    photo: '/lits.jpg',
+    photo: '/logo.jpg',
     bio: "blackgirltech's mum, podcast host, published poet, coder, wanderer, wonderer & anti-cheesecake activist. i am not my hair nor my employer.",
     contacts: {
       email: 'lostinthesource@lolaodelola.dev',

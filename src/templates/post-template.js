@@ -17,18 +17,10 @@ const PostTemplate = ({ author, data }: Props) => {
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
 
   return (
-    <div className={menuStyles['mainMenu__banner']}>
-    </div>
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
       <div>
         <Link to="/">
-          <img
-            src={withPrefix(`${siteAuthor.photo}`)}
-            className={authorStyles['author__photo-menu']}
-            width="100"
-            height="100"
-            alt={`${siteAuthor.photo}`}
-          />
+          All articles
         </Link>
         <ul className={menuStyles['mainMenu__list']}>
           <li className={menuStyles['mainMenu__list-item']}><a href="https://calendly.com/lolaodelola/office-hours" className={menuStyles['mainMenu__list-link']}>
@@ -38,6 +30,8 @@ const PostTemplate = ({ author, data }: Props) => {
             Podcast
           </a></li>
         </ul>
+      </div>
+      <div className={menuStyles['mainMenu__banner']}>
       </div>
       <Post post={data.markdownRemark} />
     </Layout>
