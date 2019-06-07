@@ -19,7 +19,7 @@ const PostTemplate = ({ author, data }: Props) => {
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
       <div>
-        <Link to="/">
+        <Link to="/" className={menuStyles['mainMenu__all-articles']}>
           All articles
         </Link>
         <ul className={menuStyles['mainMenu__list']}>
