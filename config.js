@@ -6,7 +6,7 @@ module.exports = {
   subtitle: 'Podcast & blog by Lola Odelola',
   copyright: '© All rights reserved.',
   postsPerPage: 6,
-  // googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-141689568-1',
   menu: [
     {
       label: 'Articles',
