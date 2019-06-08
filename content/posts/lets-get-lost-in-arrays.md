@@ -54,4 +54,4 @@ So what was the point? Now you know that arrays in Ruby **are** `Array`s that be
 
 - - -
 
-_Thanks to [Marko Lindqvist](https://twitter.com/cazfi74) for helping me understand some of the tricky C code and [TJ](https://twitter.com/tunji_d) for the Java bits and proof-reading._
+_Thanks to [Marko Lindqvist](https://twitter.com/cazfi74) for helping me understand some of the tricky C code and [TJ](https://twitter.com/tunji\_d) for the Java bits and proof-reading._
