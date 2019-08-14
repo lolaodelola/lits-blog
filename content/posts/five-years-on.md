@@ -52,4 +52,4 @@ The last one is really important for me to note and share because a lot of my ex
 
 Final Thoughts
 -
-Sometimes I'm disappointed about not being where I thought I'd be at this point but then I remember all the stuff I've done and people I've helped along the way and that makes me really happy. I'm excited about my next chapter because I feel a little more confident, I see my weak points and know what I need to do to address them. I have people around me who care about me and champion me even when I don't have the energy to champion myself. I am blessed.
+Sometimes I'm disappointed about not being where I thought I'd be at this point but then I remember all the stuff I've done and people I've helped along the way and that makes me really happy. I'm excited about my next chapter because I feel a little more confident, I see my weak points and know what I need to do to address them. I have people around me who care about me and champion me even when I don't have the energy to champion myself. I am blessed. 💜
