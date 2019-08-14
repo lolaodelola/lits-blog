@@ -25,7 +25,7 @@ Despite everything, I've come a really long way but I haven't done this alone. I
 
 And because of that, I've also accomplished things 💅🏾:
 
-👩🏾‍💻 [blackgirl.tech](https://blackgirl.tech) is probably my biggest (and most well known) accomplishment. I, with the help of various people, introduced over 200 Black women and non-binary people to coding and offer scholarships to learn how to code. Both scholars are now full-time software engineers.
+👩🏾‍💻 [blackgirl.tech](https://blackgirl.tech) is probably my biggest (and most well known) accomplishment. I, with the help of various people, introduced over 200 Black women and non-binary people to coding and was able to offer scholarships to fund coding tuition. Both scholars are now full-time software engineers.
 
 👩🏾‍💻 I've contributed to open source projects (not nearly as many as I would have liked) - Diaspora, acts-as-taggable, etc.
 
