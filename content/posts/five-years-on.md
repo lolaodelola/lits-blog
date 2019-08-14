@@ -21,7 +21,7 @@ I've done work that has made, if not the world better then the lives of those I 
 Reflections 
 -
 
-Despite everything, I've come a really long way but I haven't done this alone. I was lucky enough to have someone who could pay majority of my bootcamp fees, then after that I was blessed to find genuine people who wanted to help me and see me grow. There are people who have mentored me, helped with coding tests, career advise, general support and a listening ear when things are going wrong. **Having a support system has been key to my survival.**
+Despite everything, I've come a really long way but I haven't done this alone. I was lucky enough to have someone who could pay majority of my bootcamp fees, then after that I was blessed to find genuine people who wanted to help me and see me grow. There are people who have mentored me, helped with coding tests, career advise, general support and a listening ear when things were going wrong. **Having a support system has been key to my survival.**
 
 And because of that, I've also accomplished things 💅🏾:
 
