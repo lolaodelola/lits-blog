@@ -44,7 +44,7 @@ Learnings
 
 3. I don't like every technology I use, and that's okay. It doesn't mean I'm a hater, I don't have to like everything (hi, react 😒).
 
-4. Giving back and feeding into the community is one of the best things I can do with my skills. Whether it's teaching, mentoring, or pro-bono/discounted work for people doing important things, this is not only the best way to learn, but the best way for me to see real impact.
+4. Giving back and pouring into the community is one of the best things I can do with my skills. Whether it's teaching, mentoring, or pro-bono/discounted work for people doing important, world-improving things, this is not only the best way to learn, but the best way for me to make societal impact.
 
 5. I am a talented engineer/developer/coder. I can explain difficult concepts to non-tech people, I can learn difficult concepts and implement them, I know where to look for answers, & I'm better at asking questions.
 
