@@ -3,7 +3,7 @@ template: post
 title: Five Years On
 slug: five-years-on
 draft: false
-date: 2019-08-13T16:50:02.863Z
+date: 2019-08-14T17:00:00.000Z
 description: 'It''s been five years in the tech industry, so let''s reflect!'
 category: Personal
 tags:
