@@ -12,7 +12,7 @@ tags:
 ---
 ![Tiffany Haddish exclaiming "I made it"](https://media.giphy.com/media/877CH47AxmFkAadY6Z/giphy.gif)
 
-It's been five years in the (tech) game and honestly, if it wasn't for my current job, I would have capped it at four. When I first got in, I always used to imagine where I'd be five years in, a senior engineer at a small company doing important or at least interesting work that was changing the world for better.
+It's been five years in the (tech) game and honestly, if it wasn't for my current job, I would have capped it at four. When I first got in, I always used to imagine where I'd be five years in; a senior engineer at a small company doing important or at least interesting work that was changing the world for better.
 
 ![Man stifling his laughter](https://media.giphy.com/media/fBG7UnBi7QtePFHEnk/giphy.gif)
 
@@ -44,6 +44,12 @@ Learnings
 
 3. I don't like every technology I use, and that's okay. It doesn't mean I'm a hater, I don't have to like everything (hi, react 😒).
 
-4. I am a talented engineer/developer/coder. I can explain difficult concepts to non-tech people, I can learn difficult concepts and implement them, I know where to look for answers, & I'm better at asking questions.
+4. Giving back and feeding into the community is one of the best things I can do with my skills. Whether it's teaching, mentoring, or pro-bono/discounted work for people doing important things, this is not only the best way to learn, but the best way for me to see real impact.
+
+5. I am a talented engineer/developer/coder. I can explain difficult concepts to non-tech people, I can learn difficult concepts and implement them, I know where to look for answers, & I'm better at asking questions.
 
 The last one is really important for me to note and share because a lot of my experience is clouded by feeling like I'm not good enough. This isn't not imposter syndrome either.
+
+Final Thoughts
+-
+Sometimes I'm disappointed about not being where I thought I'd be at this point but then I remember all the stuff I've done and people I've helped along the way and that makes me really happy. I'm excited about my next chapter because I feel a little more confident, I see my weak points and know what I need to do to address them. I have people around me who care about me and champion me even when I don't have the energy to champion myself. I am blessed.
