@@ -42,7 +42,7 @@ Learnings
 
 2. Learning information that I have little practical, everyday-use for is redundant for me. I find it difficult to store that kind of information (hi, algorithims and big o notation 👋🏾).
 
-3. I don't like every technology I use, and that's okay. It doesn't mean I'm a hater, I don't have to like everything (hi, react 😒).
+3. I don't like every technology I use, and that's okay. It doesn't mean I'm a hater, I don't have to like everything but understanding why other people like it, and the benefits it has, is key to being a good dev (hi, react 😒).
 
 4. Giving back and pouring into the community is one of the best things I can do with my skills. Whether it's teaching, mentoring, or pro-bono/discounted work for people doing important, world-improving things, this is not only the best way to learn, but the best way for me to make societal impact.
 
