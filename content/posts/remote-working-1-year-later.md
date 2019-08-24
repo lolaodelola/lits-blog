@@ -49,4 +49,4 @@ The feedback loop while remote working is a concern for many because it's a lot 
 
 ---
 
-I love the flexibility that remote working gives, it's the only reason why I can go back to school and still work full time. There are struggles but nothing for me that I can't adjust to or get over. This isn't for everybody though, one of my best friends hates working remotely and although he does work from home once in a while, he much rather prefers working in an office with people around him. That's okay too, everybody doesn't have to work remotely.
+I love the flexibility that remote working gives, it's the only reason why I can go back to school and still work full time. There are struggles but nothing for me that I can't adjust to or get over. This isn't for everybody though, one of my best friends hates working remotely and although he does work from home once in a while, he much rather prefers working in an office with people around him. That's okay too, everybody doesn't have to work remotely. And even if you do work remotely, home doesn't have to be your office space, you can work from co-working spaces, coffee shops, the park, anywhere that is suitable for you.
