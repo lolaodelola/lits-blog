@@ -3,7 +3,7 @@ template: post
 title: 'Remote Working: A Year Later'
 slug: remote-working-a-year-later
 draft: true
-date: 2019-08-20T20:27:19.828Z
+date: 2019-08-26T20:27:19.828Z
 description: >-
   I've been remote working full-time for a year now, and here's what I've
   learnt.
