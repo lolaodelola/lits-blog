@@ -1,5 +1,5 @@
 ---
-template: post
+layout: post
 title: 'Remote Working: 1 Year Later'
 slug: remote-working-a-year-later
 published: false

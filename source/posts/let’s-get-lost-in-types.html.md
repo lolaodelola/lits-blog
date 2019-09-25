@@ -1,5 +1,5 @@
 ---
-template: post
+layout: post
 title: Let’s Get Lost in Types
 slug: lets-get-lost-in-types
 published: true

@@ -1,5 +1,5 @@
 ---
-template: post
+layout: post
 title: Five Years On
 slug: five-years-on
 published: true

@@ -1,5 +1,5 @@
 ---
-template: post
+layout: post
 title: Let's Get Lost in Arrays
 slug: get-lost-in-arrays
 published: true
