@@ -1,6 +1,6 @@
 ---
 title: Lost in the Source
-blog: blog
+blog: podcast
 pageable: true
 ---
 
@@ -55,7 +55,7 @@ pageable: true
     <div class="page">
       <div class="page__inner">
         <div class="page__body">
-          <% page_articles('blog').each do | article | %>
+          <% page_articles('podcast').each do | article | %>
             <div>
               <time class="feed__item-meta-time" datetime=<%=article.date%>>
                 <%= article.date.strftime("%d %B, %Y") %>

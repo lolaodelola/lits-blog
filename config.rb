@@ -46,12 +46,26 @@ configure :build do
 end
 
 activate :blog do |blog|
+  blog.name = "blog"
+  # blog.prefix = "blog"
   blog.permalink = "blog/{title}.html"
   blog.sources = "posts/{title}.html"
-  blog.layout = "blog"
+  blog.layout = "post"
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "posts/page/{num}"
+  blog.tag_template = "tag.html"
+  blog.taglink = "tags/{tag}.html"
+end
+
+activate :blog do |blog|
+  blog.name = "podcast"
+  blog.prefix = "podcast"
+  blog.sources = "episodes/{title}.html"
+  blog.layout = "episode"
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = "episodes/page/{num}"
   blog.tag_template = "tag.html"
   blog.taglink = "tags/{tag}.html"
 end
