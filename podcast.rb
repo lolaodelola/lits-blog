@@ -18,11 +18,11 @@ s3_client = Aws::S3::Client.new(region: "eu-west-2", credentials: credentials)
 aws_transcribe_client = Aws::TranscribeService::Client.new(region: "eu-west-2", credentials: credentials)
 
 # Create audio object in S3
-obj = s3_resource.bucket("lits-podcast-episodes").object("#{@file_name}.mp3")
+obj = s3_resource.bucket("lits-podcast-episodes").object("audio/#{@file_name}.mp3")
 puts "Uploading audio"
 if obj.upload_file(@audio_path)
   puts "done"
-  @audio_url = s3_resource.bucket('lits-podcast-episodes').object("#{@file_name}.mp3").public_url
+  @audio_url = s3_resource.bucket('lits-podcast-episodes').object("audio/#{@file_name}.mp3").public_url
 else
   puts "nope"
 end
@@ -52,13 +52,17 @@ draft_transcript = s3_client.get_object({
 # Parse transcript
 draft_transcript_body = JSON.parse(draft_transcript.body.read)["results"]["transcripts"][0]["transcript"]
 puts "Writing to episode post"
-File.open("source/podcast/episodes/#{@file_name}.html.markdown", "a") do |file|
+File.open("source/podcast/episodes/#{@file_name}.html.markdown", "w") do |file|
   file.puts "---"
   file.puts "title: #{@file_name}"
   file.puts "blog: podcast"
   file.puts "published: false"
   file.puts "date:"
+  file.puts "description:"
   file.puts "---"
-  file.puts @audio_url
+  file.puts "<audio controls src='#{@audio_url}'>
+      Your browser does not support the <code>audio</code> element.
+    </audio>"
+  file.puts "\n"
   file.puts draft_transcript_body
 end
