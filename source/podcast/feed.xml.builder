@@ -20,6 +20,7 @@ xml.feed "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:
     xml.copyright "All rights reserved"
     xml.webmaster "lostinthesource@lolaodelola.dev"
     xml.description "Tech news &amp; views"
+    xml.author { xml.name "Lola Odelola" }
     xml.tag!("itunes:subtitle", "Tech news &amp; views")
     xml.tag!("itunes:owner") do
       xml.tag!("itunes:name", "Lost in the Source")
@@ -35,9 +36,9 @@ xml.feed "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:
     end
     xml.tag!("itunes:category", "text" => "Technology")
 
-    # xml.updated(articles.first.date.to_time.iso8601) unless articles.empty?
-    # xml.author { xml.name "Lola Odelola" }
-    #
+    xml.pudate(articles.first.date.to_time.iso8601) unless articles.empty?
+    xml.last_build_date(articles.first.date.to_time.iso8601) unless articles.empty?
+
     articles.each do |article|
       article_url = URI.join(root_url, article.url)
       xml.item do
