@@ -41,6 +41,12 @@ xml.feed "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:
 
     articles.each do |article|
       article_url = URI.join(root_url, article.url)
+      unless article.data.description.nil?
+        desc = article.data.description
+      else
+        desc = "Description Unavailable"
+      end
+      duration = Time.at(article.data.duration.to_f).utc.strftime('%H:%M:%S')
       xml.item do
         xml.title article.title
         xml.link "rel" => "alternate", "href" => article_url
@@ -48,15 +54,15 @@ xml.feed "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:
         xml.published article.date.to_time.iso8601
         xml.updated article.date.to_time.iso8601
         xml.author { xml.name "Lola Odelola" }
-        xml.summary article.summary(500), :type => "html"
+        xml.summary desc
         xml.content article.body, "type" => "html"
-        xml.tag!("itunes:duration", article.data.duration)
+        xml.tag!("itunes:duration", duration)
         xml.tag!("itunes:author", "Lola Odelola")
         xml.tag!("itunes:image", "href" => "http://i1.sndcdn.com/artworks-000527269293-h4jhi0-original.jpg")
         xml.tag!("itunes:explicit", "no")
-        xml.tag!("itunes:summary", article.data.description)
+        xml.tag!("itunes:summary", desc)
         xml.tag!("itunes:subtitle", "no")
-        xml.description article.data.description
+        xml.description desc
         xml.enclosure "type" => "audio/mpeg", "url" => article.data.audio_link, "length" => 0
       end
     end
