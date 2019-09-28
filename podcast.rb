@@ -85,5 +85,5 @@ File.open("source/podcast/episodes/#{@audio[:name]}.html.markdown", 'w') do |fil
       Your browser does not support the <code>audio</code> element.
     </audio>"
   file.puts "\n" # Add double space
-  file.puts draft_transcriptg
+  file.puts draft_transcript
 end
