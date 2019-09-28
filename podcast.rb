@@ -69,7 +69,7 @@ draft_transcript = s3_client.get_object(
 )
 
 # Parse transcript
-draft_transcript_body = JSON.parse(draft_transcript.body.read)['results']['transcripts'][0]['transcript']
+draft_transcript = JSON.parse(draft_transcript.body.read)['results']['transcripts'][0]['transcript']
 puts 'Writing to episode post'
 File.open("source/podcast/episodes/#{@audio[:name]}.html.markdown", 'w') do |file|
   file.puts "---"
@@ -85,5 +85,5 @@ File.open("source/podcast/episodes/#{@audio[:name]}.html.markdown", 'w') do |fil
       Your browser does not support the <code>audio</code> element.
     </audio>"
   file.puts "\n" # Add double space
-  file.puts draft_transcript_body
+  file.puts draft_transcriptg
 end
