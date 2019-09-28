@@ -64,14 +64,15 @@ pageable: true
             </div>
             <article class="feed__item">
               <h2 class="feed__item-title">
-                <%= link_to article.title, article, class: "feed__item-title-link" %>
+                <%=  article.title.gsub("_", " ") %>
               </h2>
 
-              <p class="feed__item-description">
-                <%= article.summary %>
-              </p>
-
-              <%= link_to 'Read more', article, class: "feed__item-readmore" %>
+              <% if article.data.description %>
+                <p class="feed__item-description">
+                  <%= article.data.description %>
+                </p>
+              <% end %>
+              <%= link_to 'Listen now', article, class: "feed__item-readmore" %>
             </article>
           <% end %>
 

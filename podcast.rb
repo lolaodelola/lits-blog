@@ -17,7 +17,9 @@ duration_seconds = get_duration.gsub('kMDItemDurationSeconds =', '').strip
 @audio[:duration] = Time.at(duration_seconds.to_f).utc.strftime('%H:%M:%S')
 
 get_sample_rate = `mdls -name kMDItemAudioSampleRate #{@audio[:path]}`
-@audio[:sample_rate] = get_sample_rate.gsub('kMDItemAudioSampleRate =', '').strip
+bare_sample_rate = get_sample_rate.gsub('kMDItemAudioSampleRate =', '').strip
+bare_sample_rate == "0" ? (@audio[:sample_rate] = "44100") : (@audio[:sample_rate] = bare_sample_rate)
+
 puts "Metadata setup complete"
 
 # AWS setup
@@ -33,7 +35,7 @@ File.open(@audio[:path], 'rb') do |file|
       acl: 'public-read',
       body: file,
       bucket: ENV['AWS_BUCKET'],
-      key: "audio/#{@audio[:name]}.mp3",
+      key: "audio/#{@audio[:name]}.wav",
       metadata: {
           duration: @audio[:duration],
           sample_rate: @audio[:sample_rate]
@@ -42,14 +44,14 @@ File.open(@audio[:path], 'rb') do |file|
 end
 puts "Audio upload complete"
 
-@audio[:url] = s3_resource.bucket(ENV['AWS_BUCKET']).object("audio/#{@audio[:name]}.mp3").public_url
+@audio[:url] = s3_resource.bucket(ENV['AWS_BUCKET']).object("audio/#{@audio[:name]}.wav").public_url
 
 puts 'Starting transcription job'
 transcribe_client.start_transcription_job(
    transcription_job_name: @audio[:name], # required
    language_code: 'en-GB', # required,
    media_sample_rate_hertz: @audio[:sample_rate].to_i,
-   media_format: 'mp3', # required
+   media_format: 'wav', # required
    media: { # required
             media_file_uri: @audio[:url]
    },
@@ -81,9 +83,9 @@ File.open("source/podcast/episodes/#{@audio[:name]}.html.markdown", 'w') do |fil
   file.puts "description:"
   file.puts "audio_link: #{@audio[:url]}"
   file.puts "---"
-  file.puts "<audio controls src='#{@audio[:url]}'>
+  file.puts "<div class='row'><audio controls src='#{@audio[:url]}' class='col-md-12'>
       Your browser does not support the <code>audio</code> element.
-    </audio>"
+    </audio></div>"
   file.puts "\n" # Add double space
   file.puts "Transcript unavailable"
   file.puts "\n"

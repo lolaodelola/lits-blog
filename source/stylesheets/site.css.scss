@@ -63,6 +63,7 @@
 
     &-title {
       font-size: $typographic-base-font-size * 1.6875;
+      text-transform: capitalize;
       @include line-height(1.5);
       @include margin-top(0);
       @include margin-bottom(.5);
@@ -306,6 +307,7 @@
   &__title {
     font-size: $typographic-base-font-size * 2;
     max-width: $layout-post-width;
+    text-transform: capitalize;
     margin-left: auto;
     margin-right: auto;
     font-weight: 600;
@@ -330,21 +332,29 @@
           font-size: $typographic-base-font-size * 1.6817;
           margin-top: 0;
           @include margin-bottom(1);
-          @include line-height(1.5)
+          @include line-height(1.5);
         }
 
       }
 
     }
 
+    & audio {
+      max-width: $layout-post-width;
+      margin-left: auto;
+      margin-right: auto;
+      @include margin-bottom(1);
+      @include margin-top(1);
+    }
+
     & a {
-      text-decoration: underline
+      text-decoration: underline;
     }
 
     & * {
       max-width: $layout-post-width;
       margin-left: auto;
-      margin-right: auto
+      margin-right: auto;
     }
 
     & img {

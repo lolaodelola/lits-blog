@@ -37,7 +37,7 @@
       <div>
         <div class="content">
           <h1 class="content__title">
-            <%= current_page.data.title %>
+            <%= current_page.data.title.gsub("_", " ") %>
           </h1>
           <div class="content__body">
             <%= yield %>

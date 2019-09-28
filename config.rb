@@ -65,7 +65,7 @@ activate :blog do |blog|
   blog.sources = "episodes/{title}.html"
   blog.layout = "episode"
   blog.paginate = true
-  blog.per_page = 10
+  blog.per_page = 5
   blog.page_link = "episodes/page/{num}"
   blog.tag_template = "tag.html"
   blog.taglink = "tags/{tag}.html"
