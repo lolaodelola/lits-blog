@@ -61,6 +61,7 @@ end
 activate :blog do |blog|
   blog.name = "podcast"
   blog.prefix = "podcast"
+  blog.permalink = "/episodes/{title}.html"
   blog.sources = "episodes/{title}.html"
   blog.layout = "episode"
   blog.paginate = true
