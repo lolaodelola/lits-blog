@@ -7,3 +7,13 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
 gem "middleman-blog"
 gem "normalize-scss"
 gem "nokogiri"
+
+# RSS
+gem "builder"
+
+# Podcast Scripting
+gem "aws-sdk-s3"
+gem "aws-sdk-transcribeservice"
+gem "dotenv"
+gem "rb-readline"
+gem "pry"

@@ -1,5 +1,6 @@
 ---
-template: post
+layout: post
+blog: blog
 title: Let's Get Lost in Arrays
 slug: get-lost-in-arrays
 published: true

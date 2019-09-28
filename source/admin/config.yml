@@ -10,11 +10,24 @@ collections:
     label: "Posts" # Used in the UI
     folder: "source/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "blog/{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Published", name: "published", widget: "boolean", default: true}
+      - {label: "Blog Name", name: "blog", widget: "string", default: "blog"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "episodes" # Used in routes, e.g., /admin/collections/blog
+    label: "Episodes" # Used in the UI
+    folder: "source/podcast/episodes" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "episodes/{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+      - {label: "Blog Name", name: "blog", widget: "string", default: "podcast"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
