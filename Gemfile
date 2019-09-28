@@ -8,8 +8,10 @@ gem "middleman-blog"
 gem "normalize-scss"
 gem "nokogiri"
 
-# Podcast Scripting
+# RSS
+gem "builder"
 
+# Podcast Scripting
 gem "aws-sdk-s3"
 gem "aws-sdk-transcribeservice"
 gem "dotenv"

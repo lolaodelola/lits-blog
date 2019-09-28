@@ -1,5 +1,6 @@
 ---
 layout: post
+blog: blog
 title: Five Years On
 slug: five-years-on
 published: true

@@ -1,5 +1,6 @@
 ---
 layout: post
+blog: blog
 title: Let’s Get Lost in Types
 slug: lets-get-lost-in-types
 published: true
