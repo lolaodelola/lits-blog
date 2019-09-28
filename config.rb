@@ -1,5 +1,7 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+require 'tzinfo'
+Time.zone = 'Europe/London'
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
@@ -52,7 +54,6 @@ activate :blog do |blog|
   blog.sources = "posts/{title}.html"
   blog.layout = "post"
   blog.paginate = true
-  blog.per_page = 10
   blog.page_link = "posts/page/{num}"
   blog.tag_template = "tag.html"
   blog.taglink = "tags/{tag}.html"
@@ -65,7 +66,6 @@ activate :blog do |blog|
   blog.sources = "episodes/{title}.html"
   blog.layout = "episode"
   blog.paginate = true
-  blog.per_page = 5
   blog.page_link = "episodes/page/{num}"
   blog.tag_template = "tag.html"
   blog.taglink = "tags/{tag}.html"
